@@ -1,3 +1,4 @@
+import { Card } from "./Card";
 import { ColumnContainer, ColumnTitle, CardContainer } from "./styles";
 
 type ColumnProps = {
@@ -8,9 +9,9 @@ export const Column = ({ text }: ColumnProps) => {
 	return (
 		<ColumnContainer>
 			<ColumnTitle>{text}</ColumnTitle>
-			<CardContainer>Generate app scaffold</CardContainer>
-			<CardContainer>Learn TypeScript</CardContainer>
-			<CardContainer>Begin to use static typing</CardContainer>
+			<Card text='Generate app scaffold' />
+			<Card text='Learn TypeScript' />
+			<Card text='Begin to use static typing' />
 		</ColumnContainer>
 	)
 }
